@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAPPY ANNIVERSARY KE-1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="balloon-container">
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+    </div>
+
+    <h1 class="title">Untuk Orang Yang Sedang Bersamaku</h1>
+    <p class="message">Halo Cill Makasihh Udah Mau Bau Bertahan Sejauh Ini. Makasih Juga Udah Nerima Amip Apa Adanya. Sehat Terus Cantiknyaa Akuu❤️</p>
+
+    <div class="photo-gallery">
+      <div class="photo-item">
+        <img src="image1.jpg" alt="Foto 1" class="photo">
+        <p class="photo-description">Ini foto bareng pertama kita.</p>
+      </div>
+      <div class="photo-item">
+        <img src="image2.jpg" alt="Foto 2" class="photo">
+        <p class="photo-description">Mancing Date Pertama Kita.😆</p>
+      </div>
+      <div class="photo-item">
+        <img src="image3.jpg" alt="Foto 3" class="photo">
+        <p class="photo-description">Foto bareng waktu tugas sejarah.</p>
+      </div>
+      <div class="photo-item">
+        <img src="image4.jpg" alt="Foto 4" class="photo">
+        <p class="photo-description">Foto dua wanita cantik.</p>
+      </div>
+    </div>
+    
+    <button class="reveal-btn" onclick="revealMessage()">Klik untuk Pesan Khusus</button>
+    <p id="hiddenMessage" class="hidden">Semoga di tahun depan bisa sama sama teruss yaa cantikkk </p>
+
+    <p id="hiddenTrigger" class="hidden-trigger" onclick="showThoughts()">Klik aku untuk melihat pesan dan kesan!</p>
+    <div id="thoughts" class="hidden-thoughts">
+      <p>🌟 <b>Pesan:</b> Jadilah diri sendiri tanpa memikirkan sudut pandang irang lain tentangmu.</p>
+      <p>💌 <b>Kesan:</b> Makasih untuk setiap momen yang lia berikan dan kungkin ini first time amip punya hubungan sampe 1 tahun dan semoga bisa berlanjut terus.</p>
+    </div>
+  </div>
+  
+    <button onclick="startMusic()">Putar Musik</button>
+  <script>
+    function startMusic() {
+      const music = document.getElementById("romanticMusic");
+      music.currentTime = 75;
+      music.play();
+    }
+    </script>
+
+  <audio id="romanticMusic" src="music.mp3" autoplay loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
